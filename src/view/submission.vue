@@ -39,7 +39,6 @@
       </div>
       <recommend :kk='meg'></recommend> -->
       <!--旋转木马-->
-     1111111111
     </div>
 </template>
 
