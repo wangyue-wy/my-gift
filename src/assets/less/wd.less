@@ -1,0 +1,366 @@
+.wd{
+    .head{
+        height: 100px;
+        width: 100%;
+        background: black;
+        .container{
+            width: 90%;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                color: orangered;
+                font-size: 22px
+            }
+           ul{
+               display: flex;
+               li{
+                   color: white;
+                   font-size: 18px;
+                   margin-left: 150px;
+                   position: relative;
+                   cursor: pointer;
+                   transition: all 0.5s;
+                   &::after{
+                    position: absolute;
+                    content: '';
+                    width: 0px;
+                    height: 2px;
+                    background: white;
+                    bottom: -20px;
+                    left: 0;
+                    transition: all 0.5s;
+                }
+                   .nav{
+                        width: 200px;
+                        background: rgba(0,0,0,0.7);
+                        position: absolute;
+                        top: 61px;
+                        right: -69px;
+                        z-index: 100;
+                        p{
+                            font-size: 20px;
+                            color: white;
+                            width: 160px;
+                            margin: 0 auto;
+                            letter-spacing: 5px;
+                            line-height: 50px;
+                        }
+                   }
+               }
+               li:first-child{
+                   margin-left: 0;
+                  
+               }
+               .show{
+                   color: orangered;
+                   &::after{
+                    position: absolute;
+                    content: '';
+                    width: 52px;
+                    height: 2px;
+                    background: orangered;
+                    bottom: -20px;
+                    left: 0;
+                }
+               }
+           }
+        }
+    }
+    .merge{
+        width: 100%;
+        padding-top: 50px;
+        position: relative;
+        height: 2690px;
+        .merge-top{
+            font-size: 30px;
+            text-align: center;
+            color: orangered;
+            padding-bottom: 30px;
+        }
+        .listShowa{
+            position: absolute !important;
+            top: 100px !important;
+            left: 0 !important;
+            transition: all 1s;
+        }
+        .listShowb{
+            position: absolute !important;
+            top: 770px !important;
+            right: 0 !important;
+            transition: all 1s;
+        }
+        .listShowc{
+            position: absolute !important;
+            top: 1430px !important;
+            left: 0 !important;
+            transition: all 1s;
+        }
+        .listShowd{
+            position: absolute !important;
+            top: 2090px !important;
+            right: 0 !important;
+            transition: all 1s;
+        }
+
+        .listOne{
+            position: absolute;
+            top: 100px;
+            left: -2000px;
+            
+        }
+        .listTwo{
+            position: absolute;
+            top: 770px;
+            right: -2000px;
+        }
+        .listThree{
+            position: absolute;
+            top: 1430px;
+            left: -2000px;
+        }
+        .listFour{
+            position: absolute;
+            top: 2090px;
+            right: -2000px;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            li{
+                width: 23%;
+                height: 600px;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 600px;
+                }
+                p{
+                    font-size: 20px;
+                    padding-top: 10px;
+                    color: orange;
+                }
+                .flag{
+                    width: 100%;
+                    height: 600px;
+                    background: rgba(0,0,0,0.5);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    p{
+                        display: block;
+                        width: 95%;
+                        height: 560px;
+                        border: 1px solid white;
+                        margin-left: 2%;
+                        margin-top: 15px;
+                    }
+                    span{
+                        color: orangered;
+                        font-size: 25px;
+                        z-index: 100;
+                        position: absolute;
+                        top: 50px;
+                        left: 40%;
+                    }
+                }
+            }
+        }
+    }
+    .el-carousel__item h3 {
+        color: #475669;
+        font-size: 14px;
+       
+        line-height: 200px;
+        margin: 0;
+        img{
+            width: 100%;
+        }
+      }
+      .el-carousel__arrow {
+          color: white;
+          background: red;
+      }
+      .el-carousel__button{
+          width: 60px;
+          height: 6px;
+      }
+      .el-carousel__indicators--outside button{
+          background: red;
+      }
+      .lun{
+          padding-top: 50px;
+          text-align: center;
+          p{
+              display: block;
+              font-size: 30px;
+              color: orangered;
+              padding-bottom: 70px;
+          }
+      }
+      .tab-topic{
+          font-size: 30px;
+          color: orangered;
+          text-align: center;
+          padding-top: 30px;
+      }
+      .tab{
+          padding-top: 30px;
+          text-align: center;
+          ul{
+              display: flex;
+              justify-content: center;
+              li{
+                  font-size: 20px;
+                  color: black;
+                  padding: 10px 40px;
+                  border: 2px solid skyblue;
+                  border-left: none;
+                  cursor: pointer;
+              }
+              li:first-child{
+                  border-left: 2px solid skyblue;
+              }
+              .tabShow{
+                  background: skyblue;
+                  color: orangered;
+              }
+          }
+          .tab-text{
+              width: 872px;
+              border: 2px solid skyblue;
+              margin: 0 auto;
+              border-top: none;
+              div{
+                  padding: 15px 15px 30px 15px;
+                  line-height: 28px;
+              }
+          }
+      }
+      .foot{
+          width: 100%;
+          background: black;
+          margin-top: 50px;
+          padding-bottom: 50px;
+          opacity: 0.8;
+          .center{
+              width: 1000px;
+              margin: 0 auto;
+             .center-top{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 padding: 15px 0;
+                 p{
+                     display: block;
+                     color: white;
+                     font-size: 20px;
+                 }
+                 img{
+                     width: 20px;
+                     height: 20px;
+                     margin-left: 10px;
+                 }
+             }
+             .center-topic{
+                 font-size: 18px;
+                 text-align: center;
+                 color: white;
+                 padding-bottom: 10px;
+             }
+             .center-last{
+                 font-size: 16px;
+                 color: white;
+                 line-height: 25px;
+                 letter-spacing: 2px;
+             }
+          }
+      }
+      //旋转木马
+      .que{
+          text-align: center;
+          font-size: 30px;
+          color: orangered;
+          padding: 20px;
+      }
+      .horse{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 30px;
+          .wrapper {
+            height: 630px;
+            width: 60%;
+            position: relative;
+            .ppp{
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+            .btn{
+                font-size: 30px;
+                background: red;
+                border-radius: 50%;
+                color: white;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+            .el-icon-arrow-right{
+                position: absolute;
+                top: 240px;
+                right: 0px;
+               
+                
+            }
+            .el-icon-arrow-left{
+                position: absolute;
+                top: 240px;
+                left:0px;
+              
+            }
+            .aaa{
+                transition: all 0.5s;
+                opacity: 0;
+            }
+            .aab{
+                opacity: 1;
+            }  
+        }
+        .left{
+            width: 18%;
+            ul{
+                width: 100%;
+                display: flex;
+                padding-top: 100px;
+                padding-left: 15px;
+                li{
+                    width: 20px;
+                    font-size: 20px;
+                    margin-left: 30px;
+                    line-height: 50px;
+                    color: orangered;
+                }
+            }
+        }
+        .right{
+            width: 18%;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 100px;
+                margin-right: 15px;
+                li{
+                    width: 20px;
+                    font-size: 20px;
+                    margin-right: 30px;
+                    line-height: 50px;
+                    color: orangered;
+                }
+            }
+        }
+      }
+}
